@@ -1,0 +1,13 @@
+{
+  "name": "Dale",
+  "version": "0.0.1",
+  "description": "Simple sassc compilation test",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-takana": "latest",
+    "grunt-sass": "latest",
+    "node-bourbon": "latest",
+    "node-neat": "latest"
+  }
+}
