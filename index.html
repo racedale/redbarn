@@ -195,85 +195,89 @@
                         <p>Below is the application for an exhibitor space.  Please double-check your info before submitting.</p>
                     </header>
 
-                    <ul class="timeline">
+                        <form method="post" id="usrForm">
 
-                        <li class="timeline-event">
+                        <fieldset>
+                        <legend>Contact Info
+                        </legend>
+                            <label for="frmNameA">Name
+                            </label>
+                            <input type="text" name="name" id="frmNameA" placeholder="Full name" required="" autocomplete="name">
+                            <label for="frmEmailA">Email
+                            </label>
+                            <input type="email" type="email" name="email" id="frmEmailA" placeholder="name@example.com" required="" autocomplete="email">
+                            <label for="frmEmailC">Confirm Email
+                            </label>
+                            <input type="email" type="email" name="emailC" id="frmEmailC" placeholder="name@example.com" required="" autocomplete="email">
+                            <label for="frmPhoneNumA">Phone
+                            </label>
+                            <input type="text" type="tel" name="phone" id="frmPhoneNumA" placeholder="+1-555-555-1212" required="" pattern="^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$" autocomplete="tel">
+                        </fieldset>
 
-                            <div class="timeline-icon">
-                                <img src="./svg/icon-design-white.min.svg" width="30" height="30" alt="" />
-                            </div>
+                        <fieldset>
+                        <legend>Mailing
+                        </legend>
+                            <label for="frmAddressS">Street
+                            </label>
+                            <input type="text" name="ship-address" required="" id="frmAddressS" pattern="[a-zA-Z\d\s\-\,\#\.\+]+" placeholder="123 Any Street" autocomplete="shipping street-address">
+                            <label for="frmCityS">City
+                            </label>
+                            <input type="text" name="ship-city" required="" id="frmCityS" placeholder="New York" autocomplete="shipping locality">
+                            <label for="frmStateS">State
+                            </label>
+                            <input type="text" name="ship-state" required="" id="frmStateS" placeholder="NY" autocomplete="shipping region">
+                            <label for="frmZipS">Zip
+                            </label>
+                            <input type="number" name="ship-zip" required="" id="frmZipS" placeholder="10011" pattern="^\d{5,6}(?:[-\s]\d{4})?$" autocomplete="shipping postal-code">
+                            <label for="frmCountryS">Country
+                            </label>
+                            <input type="text" name="ship-country" required="" id="frmCountryS" placeholder="USA" autocomplete="shipping country">
+                            <label>
+                            <input type="checkbox" name="billAndShip" id="cbBillAndShip"> Bill to this address.
+                            </label>
+                        </fieldset>
 
-                            <div class="timeline-label">
-                                <p><em>Web Designer / Developer</em></p>
-                                <h3>Freelance</h3>
-                                <p><time datetime="2014-9-09">September 2014 &ndash; Present</time></p>
-                                <p>I decided to explore the world of freelance. I did a lot of work for the local designers to update the branding for many local clients.</p>
-                            </div>
+                        <fieldset>
+                        <legend>Billing
+                        </legend>
+                            <label for="frmAddressB">Street
+                            </label>
+                            <input type="text" name="bill-address" id="frmAddressB" required="" pattern="[a-zA-Z\d\s\-\,\#\.\+]+" placeholder="123 Any Street" autocomplete="billing street-address">
+                            <label for="frmCityB">City
+                            </label>
+                            <input type="text" name="bill-city" id="frmCityB" required="" placeholder="New York" autocomplete="billing locality">
+                            <label for="frmStateB">State
+                            </label>
+                            <input type="text" name="bill-state" id="frmStateB" required="" placeholder="NY" autocomplete="billing region">
+                            <label for="frmZipB">Zip
+                            </label>
+                            <input type="number" name="bill-zip" id="frmZipB" required="" placeholder="10011" pattern="^\d{5,6}(?:[-\s]\d{4})?$" autocomplete="billing postal-code">
+                            <label for="frmCountryB">Country
+                            </label>
+                            <input type="text" name="bill-country" id="frmCountryB" required="" placeholder="USA" autocomplete="billing country">
+                        </fieldset>
 
-                        </li>
+                        <fieldset>
+                        <legend>Payment
+                        </legend>
 
-                        <li class="timeline-event">
+                            <label for="frmNameCC">Name on card
+                            </label>
+                            <input type="text" name="ccname" id="frmNameCC" required="" placeholder="Full Name" autocomplete="cc-name">
+                            <label for="frmCCNum">Card Number
+                            </label>
+                            <input type="number" name="cardnumber" id="frmCCNum" required="" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|6(?:011|5[0-9]{2})[0-9]{12}|(?:2131|1800|35\d{3})\d{11})$" maxlength="16" autocomplete="cc-number">
+                            <label for="frmCCCVC">CVC
+                            </label>
+                            <input type="number" name="cvc" id="frmCCCVC" required="" maxlength="3" autocomplete="cc-csc">
+                            <label for="frmCCExp">Expiration
+                            </label>
+                            <input type="month" name="cc-exp" id="frmCCExp" required="" placeholder="MM-YYYY" autocomplete="cc-exp">
+                        </fieldset>
 
-                            <div class="timeline-icon">
-                                <img src="./svg/icon-pen-white.min.svg" width="30" height="30" alt="" />
-                            </div>
-
-                            <div class="timeline-label">
-                                <p><em>Web Designer &amp; Developer</em></p>
-                                <h3>Alpha Phi Omega - Epsilon Chapter</h3>
-                                <p><time datetime="2014-05-01">May 2014 &ndash; November 2014</time></p>
-                                <p>Appointed to the postition of Webmaster for another organization I was a part of.  Learned PHP and MySQL for this since it was a database driven website.  Worked on bringing the site out of 2008; making it more reliable, secure, and user friendly.</p>
-                            </div>
-
-                        </li>
-
-                        <li class="timeline-event">
-
-                            <div class="timeline-icon">
-                                <img src="./svg/icon-magnifier-white.min.svg" width="30" height="30" alt="" />
-                            </div>
-
-                            <div class="timeline-label">
-                                <p><em>Personal work</em></p>
-                                <h3>Web Design Class</h3>
-                                <p><time datetime="2008-06-01">June 2008 &ndash; December 2008</time></p>
-                                <p>I spent a semester diving head first into Foundation, Bootstrap, SCSS and more on my own time to learn about the proper standards towards efficient &amp; effective web design. I developed my own blog based off Octopress and learned about <abbr title="Search Engine Optimisation">SEO</abbr> strategies, via on-site <abbr title="Hyper Text Markup Language 5">HTML5</abbr> and <abbr title="Cascading Style Sheets">CSS3</abbr> changes; improving search engine visibility.</p>
-                            </div>
-
-                        </li>
-
-                        <li class="timeline-event">
-
-                            <div class="timeline-icon">
-                                <img src="./svg/icon-brackets-white.min.svg" width="30" height="30" alt="" />
-                            </div>
-
-                            <div class="timeline-label">
-                                <p><em>Webmaster</em></p>
-                                <h3>Sigma Tau Gamma - Beta Chapter</h3>
-                                <p><time datetime="2010-11-01">November 2010 &ndash; December 2012</time></p>
-                                <p>I started my web career at by becoming the webmaster for an organization I was a part of.  It was a complete 'start over' type of job since the previous webmaster did not conform to any of the current standards. Focus was made to make it easy to update to future-proof it for the following webmaster.</p>
-                            </div>
-
-                        </li>
-
-                        <li class="timeline-event">
-
-                            <div class="timeline-icon">
-                                <img src="./svg/icon-hat-white.min.svg" width="30" height="30" alt="" />
-                            </div>
-
-                            <div class="timeline-label">
-                                <p><em>Student</em></p>
-                                <h3>Truman State University</h3>
-                                <p><time datetime="2003-08-18">August 2010 &ndash; December 2015</time></p>
-                                <p>Started as a BS in Computer Science and then later switched to BA of Visual Communications.  Coursework is extremely multidisciplinary, combining hands on, digital work, print work, problem solving and critical thinking into an academic degree.</p>
-                            </div>
-
-                        </li>
-
-                        <li class="timeline-line"></li>
-                    </ul>
+                        <div><button id="butCheckout">Check Out</button>
+                        </div>
+                        </form>
                 </article>
             </section>
                     <footer id="section-contact" class="section dark" role="contentinfo">

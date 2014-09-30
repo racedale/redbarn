@@ -962,3 +962,23 @@ main:after {
     width: 60px;
     right: -30px;
     left: auto; } }
+
+form, label {
+  margin: auto;
+  width: 600px;
+  clear: both; }
+
+input[type="text"], input[type="number"], input[type="date"], input[type="email"], input[type="month"] {
+  clear: both;
+  width: 100%;
+  padding: 0.5rem 0.65rem;
+  font-size: 100%; }
+
+button {
+  margin: 1.5rem;
+  padding: 0.5rem;
+  background: #eee;
+  color: #777;
+  border: 2px solid gray;
+  cursor: pointer;
+  clear: both; }
