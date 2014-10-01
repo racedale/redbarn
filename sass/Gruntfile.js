@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     watch: {
       sass: {
-        files: ['*.{scss,sass}','_partials/**/*.{scss,sass}'],
+        files: ['*.{scss,sass}','refills/*.{scss,sass}','bitters/*.{scss,sass}'],
         tasks: ['sass:dist']
         //tasks: ['takana:dist']
       },

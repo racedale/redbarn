@@ -45,7 +45,51 @@
     </head>
 
     <body>
-        <nav id="nav" role="navigation">
+            <header class="navigation">
+              <div class="navigation-wrapper">
+                <a href="javascript:void(0)" class="logo">
+                  <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
+                </a>
+                <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+                <div class="nav">
+                  <ul id="navigation-menu">
+                    <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
+                    <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
+                    <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
+                    <li class="nav-link more"><a href="javascript:void(0)">More</a>
+                      <ul class="submenu">
+                        <li><a href="javascript:void(0)">Submenu Item</a></li>
+                        <li><a href="javascript:void(0)">Another Item</a></li>
+                        <li class="more"><a href="javascript:void(0)">Item with submenu</a>
+                          <ul class="submenu">
+                            <li><a href="javascript:void(0)">Sub-submenu Item</a></li>
+                            <li><a href="javascript:void(0)">Another Item</a></li>
+                          </ul>
+                        </li>
+                        <li class="more"><a href="javascript:void(0)">Another submenu</a>
+                          <ul class="submenu">
+                            <li><a href="javascript:void(0)">Sub-submenu</a></li>
+                            <li><a href="javascript:void(0)">An Item</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navigation-tools">
+                  <div class="search-bar">
+                    <div class="search-and-submit">
+                      <input type="search" placeholder="Enter Search" />
+                      <button type="submit">
+                        <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon">
+                      </button>
+                    </div>
+                  </div>
+                  <a href="javascript:void(0)" class="sign-up">Sign Up</a>
+                </div>
+              </div>
+            </header>
+        <!--<nav id="nav" role="navigation">
             <div id="nav-button">
                 <img src="./svg/icon-menu-white.min.svg" width="30" height="30" alt="Menu" />
             </div>
@@ -56,21 +100,17 @@
                 <li><a href="#exhibitor-application">Exhibitor Application</a></li>
                 <li><a href="#section-contact">Contact</a></li>
             </ul>
-        </nav>
+        </nav>-->
 
         <main id="sections" role="main">
-            <section id="section-cover" class="section feature">
-                <div class="overlay">
-                    <article>
-                        <header>
-                            <div class="icon">
-                                <h1 class="name">Red Barn</h1>
-                            </div>
-                            <h1>Providing artists and craftsmen an informal opportunity to display their work for the people in the Kirksville community</h1>
-                        </header>
-                    </article>
-                    <div class="button">
-                        <button type="button" id="onward">Scroll Down</button>
+            <section id="section-cover">
+                <div class="hero">
+                    <div class="hero-inner">
+                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
+                        <div class="intro-text">
+                          <h2>Red Barn Festival</h2>
+                          <h4>Providing artists and craftsmen an informal opportunity to display their work for the people in the Kirksville community</h4>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -186,18 +226,15 @@
                 </article>
             </section>
 
-                    <section id="exhibitor-application" class="section grey">
-
+            <section id="exhibitor-application" class="section grey">
                 <article>
-
                     <header>
                         <h2>Exhibitor Application</h2>
                         <p>Below is the application for an exhibitor space.  Please double-check your info before submitting.</p>
                     </header>
-
+                        <fieldset>
                         <form method="post" id="usrForm">
 
-                        
                         <legend>Contact Info
                         </legend>
                             <label for="frmNameA">Name
@@ -270,20 +307,36 @@
                <div><button id="butCheckout">Check Out</button>
                         </div>
                         </form>
+                        </fieldset>
                 </article>
             </section>
-                    <footer id="section-contact" class="section dark" role="contentinfo">
+        <footer class="footer-2">
+          <div class="footer-logo">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
+          </div>
+            <ul>
+              <li><a href="javascript:void(0)">About</a></li>
+              <li><a href="javascript:void(0)">Contact</a></li>
+              <li><a href="javascript:void(0)">Products</a></li>
+            </ul>
 
-            <div class="footer">
+            <div class="footer-secondary-links">
+              <ul>
+                <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+                <li><a href="javascript:void(0)">Privacy Policy</a></li>
+              </ul>
 
-                <div class="info">
-                    <ul>
-                        <li><a href="http://www.linkedin.com/in/racedale" target="_blank"><img src="./svg/icon-linkedin.min.svg" width="30" height="30" alt="LinkedIn" class="lazy" /></a></li>
-                        <li><a href="https://twitter.com/race_dale" target="_blank"><img src="./svg/icon-twitter.min.svg" width="30" height="30" alt="Twitter" class="lazy" /></a></li>
-                        <li><a href="https://github.com/racedale" target="_blank"><img src="./svg/icon-github.min.svg" width="30" height="30" alt="GitHub" class="lazy" /></a></li>
-                    </ul>
-                    <p><small>&copy; 2014 Popwave. All rights reserved. <br />Company Number: 8737938</small></p>
-                </div>
+              <ul class="footer-social">
+                <li><a href="javascript:void(0)">
+                  <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
+                  </a></li>
+                <li><a href="javascript:void(0)">
+                  <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
+                </a></li>
+                <li><a href="javascript:void(0)">
+                  <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
+                </a></li>
+              </ul>
             </div>
         </footer>
 
@@ -297,7 +350,31 @@
         <![endif]-->
 
         <script src="./js/all.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+      var menu = $('#navigation-menu');
+      var menuToggle = $('#js-mobile-menu');
+      var signUp = $('.sign-up');
 
+      $(menuToggle).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle(function(){
+          if(menu.is(':hidden')) {
+            menu.removeAttr('style');
+          }
+        });
+      });
+
+     // underline under the active nav item
+      $(".nav .nav-link").click(function() {
+        $(".nav .nav-link").each(function() {
+          $(this).removeClass("active-nav-item");
+        });
+        $(this).addClass("active-nav-item");
+        $(".nav .more").removeClass("active-nav-item");
+      });
+    });
+</script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-47107803-1']);
