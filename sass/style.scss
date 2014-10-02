@@ -620,9 +620,9 @@ main:after {
     .section article header {
     float: left;
     display: block;
-    margin-right: 1.96078%;
+    margin-right: 2%;
     width: 66%;
-    margin-left: 16.99346%;
+    margin-left: 16%;
     padding-top: 4.6875rem;
     padding-bottom: 4.6875rem;
 }
@@ -722,7 +722,7 @@ main:after {
     position: absolute;
     z-index: 2;
     width: 100%;}
-#exhibitor-application {
+.timeline {
     float: left;
     display: block;
     margin-right: 1.96078%;
@@ -732,7 +732,7 @@ main:after {
     position: relative;
     z-index: 10;
 }
-#exhibitor-application:after {
+.timeline:after {
     content: "";
     display: table;
     clear: both;
