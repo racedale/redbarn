@@ -45,51 +45,7 @@
     </head>
 
     <body>
-            <header class="navigation">
-              <div class="navigation-wrapper">
-                <a href="javascript:void(0)" class="logo">
-                  <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
-                </a>
-                <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
-                <div class="nav">
-                  <ul id="navigation-menu">
-                    <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
-                    <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
-                    <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
-                    <li class="nav-link more"><a href="javascript:void(0)">More</a>
-                      <ul class="submenu">
-                        <li><a href="javascript:void(0)">Submenu Item</a></li>
-                        <li><a href="javascript:void(0)">Another Item</a></li>
-                        <li class="more"><a href="javascript:void(0)">Item with submenu</a>
-                          <ul class="submenu">
-                            <li><a href="javascript:void(0)">Sub-submenu Item</a></li>
-                            <li><a href="javascript:void(0)">Another Item</a></li>
-                          </ul>
-                        </li>
-                        <li class="more"><a href="javascript:void(0)">Another submenu</a>
-                          <ul class="submenu">
-                            <li><a href="javascript:void(0)">Sub-submenu</a></li>
-                            <li><a href="javascript:void(0)">An Item</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </header>
-        <!--<nav id="nav" role="navigation">
-            <div id="nav-button">
-                <img src="./svg/icon-menu-white.min.svg" width="30" height="30" alt="Menu" />
-            </div>
-            <ul>
-                <li><a href="#information">Information</a></li>
-                <li><a href="#section-work">Projects</a></li>
-                <li><a href="#section-process">Process</a></li>
-                <li><a href="#exhibitor-application">Exhibitor Application</a></li>
-                <li><a href="#section-contact">Contact</a></li>
-            </ul>
-        </nav>-->
+        <header id="nav" class="navigation"></header>
 
         <main id="sections" role="main">
             <section id="section-cover">
@@ -101,43 +57,6 @@
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section id="information" class="section grey">
-                <article>
-                    <header>
-                        <h2>The Red Barn Arts &amp; Crafts Festival</h2>
-                        <p>began in 1974 as a gleam in the eye of a few arts-minded individuals.</p>
-                    </header>
-
-                    <div class="item">
-
-                        <div class="text">
-                            <p><em>Mission</em></p>
-                            <p>The Red Barn Arts &amp; Crafts Festival seeks to bring together individuals involved in the visual arts, performing arts, and crafts, with the extended community of the Kirksville region. Our setting is one of family entertainment and arts education, which cultivates an appreciation and understanding of the arts while creating promotional opportunities for participating artists.</p>
-                        </div>
-                    </div>
-
-                    <div class="item">
-
-                        <div class="text">
-                            <p><em>Brief History</em></p>
-                            <p>The festival was conceived in 1974 to promote community interest in the Arts and Crafts – to give recognition and awards for outstanding art and craft work – and to provide artists and craftsmen an informal opportunity to display and demonstrate their work for the people in the Kirksville community. The festival has grown through the years into a major regional arts and crafts festival and an important and much anticipated event in Kirksville.</p>
-                        </div>
-                    </div>
-
-                    <div class="item">
-
-                        <div class="text">
-                            <p><em>Exhibitor Spaces</em></p>
-                            <p>Exhibit spaces are approximately 10’ x 15’ wide on the street. Spaces are assigned by the jury committee. Artists and crafters must provide all display furnishings such as tables, chairs, display boards, tents, and accessories.
-                            <br>
-                            Demonstrations by the exhibitors during the festival are encouraged.</p>
-                            <em><a href="#exhibitor-application">Exhibitor application</a></em>
-                        </div>
-                    </div>
-                </article>
-
             </section>
             <section id="section-work" class="section white">
                 <article>
@@ -213,120 +132,42 @@
                     </div>
                 </article>
             </section>
-
-            <section id="exhibitor-application" class="section grey">
+            <section id="information" class="section grey">
                 <article>
                     <header>
-                        <h2>Exhibitor Application</h2>
-                        <p>Below is the application for an exhibitor space.  Please double-check your info before submitting.</p>
+                        <h2>The Red Barn Arts &amp; Crafts Festival</h2>
+                        <p>began in 1974 as a gleam in the eye of a few arts-minded individuals.</p>
                     </header>
-                        <fieldset>
-                        <form method="post" id="usrForm">
 
-                        <legend>Contact Info
-                        </legend>
-                            <label for="frmNameA">Name
-                            </label>
-                            <input type="text" name="name" id="frmNameA" placeholder="Full name" required="" autocomplete="name">
-                            <label for="frmEmailA">Email
-                            </label>
-                            <input type="email" type="email" name="email" id="frmEmailA" placeholder="name@example.com" required="" autocomplete="email">
-                            <label for="frmEmailC">Confirm Email
-                            </label>
-                            <input type="email" type="email" name="emailC" id="frmEmailC" placeholder="name@example.com" required="" autocomplete="email">
-                            <label for="frmPhoneNumA">Phone
-                            </label>
-                            <input type="text" type="tel" name="phone" id="frmPhoneNumA" placeholder="+1-555-555-1212" required="" pattern="^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$" autocomplete="tel">
+                    <div class="item">
 
-                        <legend>Mailing
-                        </legend>
-                            <label for="frmAddressS">Street
-                            </label>
-                            <input type="text" name="ship-address" required="" id="frmAddressS" pattern="[a-zA-Z\d\s\-\,\#\.\+]+" placeholder="123 Any Street" autocomplete="shipping street-address">
-                            <label for="frmCityS">City
-                            </label>
-                            <input type="text" name="ship-city" required="" id="frmCityS" placeholder="New York" autocomplete="shipping locality">
-                            <label for="frmStateS">State
-                            </label>
-                            <input type="text" name="ship-state" required="" id="frmStateS" placeholder="NY" autocomplete="shipping region">
-                            <label for="frmZipS">Zip
-                            </label>
-                            <input type="number" name="ship-zip" required="" id="frmZipS" placeholder="10011" pattern="^\d{5,6}(?:[-\s]\d{4})?$" autocomplete="shipping postal-code">
-                            <label for="frmCountryS">Country
-                            </label>
-                            <input type="text" name="ship-country" required="" id="frmCountryS" placeholder="USA" autocomplete="shipping country">
-                            <label>
-                            <input type="checkbox" name="billAndShip" id="cbBillAndShip"> Bill to this address.
-                            </label>
-
-                        <legend>Billing
-                        </legend>
-                            <label for="frmAddressB">Street
-                            </label>
-                            <input type="text" name="bill-address" id="frmAddressB" required="" pattern="[a-zA-Z\d\s\-\,\#\.\+]+" placeholder="123 Any Street" autocomplete="billing street-address">
-                            <label for="frmCityB">City
-                            </label>
-                            <input type="text" name="bill-city" id="frmCityB" required="" placeholder="New York" autocomplete="billing locality">
-                            <label for="frmStateB">State
-                            </label>
-                            <input type="text" name="bill-state" id="frmStateB" required="" placeholder="NY" autocomplete="billing region">
-                            <label for="frmZipB">Zip
-                            </label>
-                            <input type="number" name="bill-zip" id="frmZipB" required="" placeholder="10011" pattern="^\d{5,6}(?:[-\s]\d{4})?$" autocomplete="billing postal-code">
-                            <label for="frmCountryB">Country
-                            </label>
-                            <input type="text" name="bill-country" id="frmCountryB" required="" placeholder="USA" autocomplete="billing country">
-
-                        <legend>Payment
-                        </legend>
-
-                            <label for="frmNameCC">Name on card
-                            </label>
-                            <input type="text" name="ccname" id="frmNameCC" required="" placeholder="Full Name" autocomplete="cc-name">
-                            <label for="frmCCNum">Card Number
-                            </label>
-                            <input type="number" name="cardnumber" id="frmCCNum" required="" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|6(?:011|5[0-9]{2})[0-9]{12}|(?:2131|1800|35\d{3})\d{11})$" maxlength="16" autocomplete="cc-number">
-                            <label for="frmCCCVC">CVC
-                            </label>
-                            <input type="number" name="cvc" id="frmCCCVC" required="" maxlength="3" autocomplete="cc-csc">
-                            <label for="frmCCExp">Expiration
-                            </label>
-                            <input type="month" name="cc-exp" id="frmCCExp" required="" placeholder="MM-YYYY" autocomplete="cc-exp">
-               <div><button id="butCheckout">Check Out</button>
+                        <div class="text">
+                            <p><em>Mission</em></p>
+                            <p>The Red Barn Arts &amp; Crafts Festival seeks to bring together individuals involved in the visual arts, performing arts, and crafts, with the extended community of the Kirksville region. Our setting is one of family entertainment and arts education, which cultivates an appreciation and understanding of the arts while creating promotional opportunities for participating artists.</p>
                         </div>
-                        </form>
-                        </fieldset>
+                    </div>
+
+                    <div class="item">
+
+                        <div class="text">
+                            <p><em>Brief History</em></p>
+                            <p>The festival was conceived in 1974 to promote community interest in the Arts and Crafts – to give recognition and awards for outstanding art and craft work – and to provide artists and craftsmen an informal opportunity to display and demonstrate their work for the people in the Kirksville community. The festival has grown through the years into a major regional arts and crafts festival and an important and much anticipated event in Kirksville.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+
+                        <div class="text">
+                            <p><em>Exhibitor Spaces</em></p>
+                            <p>Exhibit spaces are approximately 10’ x 15’ wide on the street. Spaces are assigned by the jury committee. Artists and crafters must provide all display furnishings such as tables, chairs, display boards, tents, and accessories.
+                            <br>
+                            Demonstrations by the exhibitors during the festival are encouraged.</p>
+                            <em><a href="#exhibitor-application">Exhibitor application</a></em>
+                        </div>
+                    </div>
                 </article>
             </section>
-        <footer class="footer-2">
-          <div class="footer-logo">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
-          </div>
-            <ul>
-              <li><a href="javascript:void(0)">About</a></li>
-              <li><a href="javascript:void(0)">Contact</a></li>
-              <li><a href="javascript:void(0)">Products</a></li>
-            </ul>
-
-            <div class="footer-secondary-links">
-              <ul>
-                <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-                <li><a href="javascript:void(0)">Privacy Policy</a></li>
-              </ul>
-
-              <ul class="footer-social">
-                <li><a href="javascript:void(0)">
-                  <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
-                  </a></li>
-                <li><a href="javascript:void(0)">
-                  <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
-                </a></li>
-                <li><a href="javascript:void(0)">
-                  <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
-                </a></li>
-              </ul>
-            </div>
-        </footer>
+        <footer id="footer"></footer>
 
         </main>
 
@@ -338,8 +179,9 @@
         <![endif]-->
 
         <script src="./js/all.min.js"></script>
+        <script src="./js/loadpages.js"></script>
 <script type="text/javascript">
-        $(document).ready(function() {
+    $(document).ready(function() {
       var menu = $('#navigation-menu');
       var menuToggle = $('#js-mobile-menu');
       var signUp = $('.sign-up');

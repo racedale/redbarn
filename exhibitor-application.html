@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="keywords" content="html5, html, css3, css, web, website, developer, frontend, wordpress, SEO" />
+        <meta name="description" content="Red Barn arts and crafts festival" />
+        <meta name="author" content="Red Barn" />
+        <meta name="dcterms.rightsHolder" content="Red Barn" />
+        <meta property="og:site_name" content="Red Barn" />
+        <meta property="og:description" content="Red Barn is an arts and crafts festival in Kirksville, MO." />
+        <meta property="og:url" content="http://redbarn.com/" />
+        <meta property="og:title" content="Red Barn" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./images/logo.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="msapplication-TileColor" content="#C32F34" />
+        <meta name="msapplication-TileImage" content="./images/logo.png" />
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400,700" />
+        <link rel="stylesheet" href="./css/screen.css" />
+        <script src="./js/modernizr.js"></script>
+
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" href="./css/ie.css" />
+        <script src="./js/vendor/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <link rel="shortcut icon" href="./favicon.png" />
+        <link rel="apple-touch-icon" href="./images/logo.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="./images/logo.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="./images/logo.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="./images/logo.png" />
+        <link rel="apple-touch-startup-image" href="./images/logo.png" />
+
+        <title>Red Barn - Freelance front-end web developer, specialising in semantic and accessible HTML5, CSS3 &amp; jQuery.</title>
+
+        <!-- 01010000011011110111000001110111011000010111011001100101 -->
+    </head>
+
+    <body>
+        <header id="nav" class="navigation"></header>
+            <section id="exhibitor-application" class="section grey">
+                <article>
+                    <header>
+                        <h2>Exhibitor Application</h2>
+                        <p>Below is the application for an exhibitor space.  Please double-check your info before submitting.</p>
+                    </header>
+                        <fieldset>
+                        <form method="post" id="usrForm">
+
+                        <legend>Contact Info
+                        </legend>
+                            <label for="frmNameA">Name
+                            </label>
+                            <input type="text" name="name" id="frmNameA" placeholder="Full name" required="" autocomplete="name">
+                            <label for="frmEmailA">Email
+                            </label>
+                            <input type="email" type="email" name="email" id="frmEmailA" placeholder="name@example.com" required="" autocomplete="email">
+                            <label for="frmEmailC">Confirm Email
+                            </label>
+                            <input type="email" type="email" name="emailC" id="frmEmailC" placeholder="name@example.com" required="" autocomplete="email">
+                            <label for="frmPhoneNumA">Phone
+                            </label>
+                            <input type="text" type="tel" name="phone" id="frmPhoneNumA" placeholder="+1-555-555-1212" required="" pattern="^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$" autocomplete="tel">
+
+                        <legend>Mailing
+                        </legend>
+                            <label for="frmAddressS">Street
+                            </label>
+                            <input type="text" name="ship-address" required="" id="frmAddressS" pattern="[a-zA-Z\d\s\-\,\#\.\+]+" placeholder="123 Any Street" autocomplete="shipping street-address">
+                            <label for="frmCityS">City
+                            </label>
+                            <input type="text" name="ship-city" required="" id="frmCityS" placeholder="New York" autocomplete="shipping locality">
+                            <label for="frmStateS">State
+                            </label>
+                            <input type="text" name="ship-state" required="" id="frmStateS" placeholder="NY" autocomplete="shipping region">
+                            <label for="frmZipS">Zip
+                            </label>
+                            <input type="number" name="ship-zip" required="" id="frmZipS" placeholder="10011" pattern="^\d{5,6}(?:[-\s]\d{4})?$" autocomplete="shipping postal-code">
+                            <label for="frmCountryS">Country
+                            </label>
+                            <input type="text" name="ship-country" required="" id="frmCountryS" placeholder="USA" autocomplete="shipping country">
+                            <label>
+                            <input type="checkbox" name="billAndShip" id="cbBillAndShip"> Bill to this address.
+                            </label>
+
+                        <legend>Billing
+                        </legend>
+                            <label for="frmAddressB">Street
+                            </label>
+                            <input type="text" name="bill-address" id="frmAddressB" required="" pattern="[a-zA-Z\d\s\-\,\#\.\+]+" placeholder="123 Any Street" autocomplete="billing street-address">
+                            <label for="frmCityB">City
+                            </label>
+                            <input type="text" name="bill-city" id="frmCityB" required="" placeholder="New York" autocomplete="billing locality">
+                            <label for="frmStateB">State
+                            </label>
+                            <input type="text" name="bill-state" id="frmStateB" required="" placeholder="NY" autocomplete="billing region">
+                            <label for="frmZipB">Zip
+                            </label>
+                            <input type="number" name="bill-zip" id="frmZipB" required="" placeholder="10011" pattern="^\d{5,6}(?:[-\s]\d{4})?$" autocomplete="billing postal-code">
+                            <label for="frmCountryB">Country
+                            </label>
+                            <input type="text" name="bill-country" id="frmCountryB" required="" placeholder="USA" autocomplete="billing country">
+
+                        <legend>Payment
+                        </legend>
+
+                            <label for="frmNameCC">Name on card
+                            </label>
+                            <input type="text" name="ccname" id="frmNameCC" required="" placeholder="Full Name" autocomplete="cc-name">
+                            <label for="frmCCNum">Card Number
+                            </label>
+                            <input type="number" name="cardnumber" id="frmCCNum" required="" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|6(?:011|5[0-9]{2})[0-9]{12}|(?:2131|1800|35\d{3})\d{11})$" maxlength="16" autocomplete="cc-number">
+                            <label for="frmCCCVC">CVC
+                            </label>
+                            <input type="number" name="cvc" id="frmCCCVC" required="" maxlength="3" autocomplete="cc-csc">
+                            <label for="frmCCExp">Expiration
+                            </label>
+                            <input type="month" name="cc-exp" id="frmCCExp" required="" placeholder="MM-YYYY" autocomplete="cc-exp">
+               <div><button id="butCheckout">Check Out</button>
+                        </div>
+                        </form>
+                        </fieldset>
+                </article>
+            </section>
+        <footer id="footer"></footer>
+
+        </main>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="./js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <!--[if lte IE 8]>
+        <script src="./js/vendor/selectivizr.min.js"></script>
+        <![endif]-->
+
+        <script src="./js/all.min.js"></script>
+        <script src="./js/loadpages.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+      var menu = $('#navigation-menu');
+      var menuToggle = $('#js-mobile-menu');
+      var signUp = $('.sign-up');
+
+      $(menuToggle).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle(function(){
+          if(menu.is(':hidden')) {
+            menu.removeAttr('style');
+          }
+        });
+      });
+
+     // underline under the active nav item
+      $(".nav .nav-link").click(function() {
+        $(".nav .nav-link").each(function() {
+          $(this).removeClass("active-nav-item");
+        });
+        $(this).addClass("active-nav-item");
+        $(".nav .more").removeClass("active-nav-item");
+      });
+    });
+</script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-47107803-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    </body>
+
+</html>
